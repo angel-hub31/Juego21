@@ -46,6 +46,7 @@ public class Juego21 {
         for (Jugador jugador : jugadores) { 
             repartirCarta(jugador);         
         }
+        calcularTotal();
 	}
 	
 	public void calcularTotal() {
