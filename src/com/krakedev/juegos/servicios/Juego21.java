@@ -30,6 +30,12 @@ public class Juego21 {
         cargarValores();       
     }
 	
+	public void agregarJugador(Jugador jugador) {
+        jugadores.add(jugador); 
+    }
+	
+	
+	
 }
 
 
