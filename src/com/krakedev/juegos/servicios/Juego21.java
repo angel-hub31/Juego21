@@ -6,9 +6,12 @@ import com.krakedev.juegos.entidades.Carta;
 import com.krakedev.juegos.entidades.Jugador;
 
 public class Juego21 {
-	private ArrayList<Jugador> jugadores;
+	private ArrayList<Jugador> jugadores=new ArrayList<>();
 	private Dealer dealer;
 	
+	public Dealer getDealer() {
+	    return dealer;
+	}
 	
 	
 	public void cargarValores() {

@@ -6,6 +6,8 @@ public class Jugador {
 	private String nicname;
 	private ArrayList<Carta> cartas = new ArrayList<>();
 
+	
+
 	public void recibirCarta(Carta carta) {
 		cartas.add(carta);
 
@@ -17,5 +19,22 @@ public class Jugador {
 			carta.imprimir();
 		}
 
+	}
+	
+	
+	public String getNicname() {
+		return nicname;
+	}
+
+	public void setNicname(String nicname) {
+		this.nicname = nicname;
+	}
+
+	public ArrayList<Carta> getCartas() {
+		return cartas;
+	}
+
+	public void setCartas(ArrayList<Carta> cartas) {
+		this.cartas = cartas;
 	}
 }
