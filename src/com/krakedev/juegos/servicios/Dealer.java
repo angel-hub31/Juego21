@@ -7,6 +7,14 @@ import com.krakedev.juegos.entidades.Carta;
 public class Dealer {
 	private ArrayList<Carta>naipe;
 	
+	
+	
+	//CONSTRUCTOR
+	public Dealer() {
+		naipe=new ArrayList<>();
+		generarNaipe();
+	}
+	
 	//metodo generar naipe 
 	public void generarNaipe() {
 		ArrayList<String> palos=new ArrayList<>();
@@ -30,12 +38,15 @@ public class Dealer {
 	public void imprimirNaipe() {
 		for (Carta carta : naipe) {
 			carta.imprimir();
-			System.out.println("....NAIPE .....");
+			
 		}
 		
 	}
 		
-	
+	public int generarAleatorio(int maximo) {
+		return (int)(Math.random()*(maximo +1));
+		
+	}
 	
 	
 //getters y setter
