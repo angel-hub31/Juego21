@@ -39,7 +39,11 @@ public class Juego21 {
         jugador.recibirCarta(cartaEntregada);          
     }
 	
-	
+	public void repartirRonda() {
+        for (Jugador jugador : jugadores) { 
+            repartirCarta(jugador);         
+        }
+	}
 	
 }
 
