@@ -13,6 +13,8 @@ public class Jugador {
 		cartas.add(carta);
 
 	}
+	
+	
 
 	public void imprimir() {
 		System.out.println("Jugador: " + nicname);
@@ -22,6 +24,8 @@ public class Jugador {
 
 	}
 	
+	
+
 	
 	
 	public String getNicname() {
@@ -47,4 +51,5 @@ public class Jugador {
 	public void setPuntajeCartas(int puntajeCartas) {
 		this.puntajeCartas = puntajeCartas;
 	}
+	
 }

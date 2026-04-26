@@ -48,6 +48,19 @@ public class Juego21 {
         }
 	}
 	
+	public void calcularTotal() {
+		for (Jugador jugador : jugadores) { 
+	        int totalPorJugador = 0;
+	        
+	        for (Carta carta : jugador.getCartas()) {
+	            totalPorJugador += carta.getValorJuego();
+	        }
+	        
+	        jugador.setPuntajeCartas(totalPorJugador);
+	    }
+	}
+	
+	
 }
 
 
