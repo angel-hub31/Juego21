@@ -26,6 +26,14 @@ public class Dealer {
 				}
 			}
 		}
+	
+	public void imprimirNaipe() {
+		for (Carta carta : naipe) {
+			carta.imprimir();
+			System.out.println("....NAIPE .....");
+		}
+		
+	}
 		
 	
 	
