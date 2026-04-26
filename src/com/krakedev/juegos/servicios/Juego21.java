@@ -34,6 +34,11 @@ public class Juego21 {
         jugadores.add(jugador); 
     }
 	
+	public void repartirCarta(Jugador jugador) {
+        Carta cartaEntregada = dealer.entregarCarta(); 
+        jugador.recibirCarta(cartaEntregada);          
+    }
+	
 	
 	
 }
