@@ -12,7 +12,9 @@ public class Juego21 {
 	
 	
 	public void cargarValores() {
-        for (Carta carta : dealer.getNaipe()) {
+		
+		ArrayList<Carta> naipes = dealer.getNaipe();
+        for (Carta carta : naipes) {
             String valor = carta.getValor();
             if (valor.equals("A")) {
                 carta.setValorJuego(11); 
@@ -23,6 +25,11 @@ public class Juego21 {
             }
         }
     }
+	public void inicializar() {
+        dealer = new Dealer(); 
+        cargarValores();       
+    }
 	
+}
 
 
