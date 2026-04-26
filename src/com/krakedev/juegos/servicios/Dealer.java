@@ -48,6 +48,12 @@ public class Dealer {
 		
 	}
 	
+	public Carta entregarCarta() {
+		int posicionAleatoria=generarAleatorio(naipe.size()-1);
+		Carta cartaEntregada =naipe.get(posicionAleatoria);
+		naipe.remove(posicionAleatoria);
+		return cartaEntregada;
+	}
 	
 //getters y setter
 	public ArrayList<Carta> getNaipe() {
