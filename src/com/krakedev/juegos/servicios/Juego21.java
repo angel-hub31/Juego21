@@ -29,8 +29,12 @@ public class Juego21 {
 	}
 
 	public void inicializar() {
-		dealer = new Dealer();
-		cargarValores();
+		this.dealer = new Dealer();
+		this.cargarValores();
+
+		for (Jugador j : jugadores) {
+			j.limpiar();
+		}
 	}
 
 	public void agregarJugador(Jugador jugador) {
@@ -71,23 +75,21 @@ public class Juego21 {
 		}
 		return ganadores;
 	}
-	
-	
+
 	public ArrayList<Jugador> jugar() {
-	    ArrayList<Jugador> ganadores = new ArrayList<>();
-	    
-	    for (int i = 0; i < 3; i++) {
-	        repartirRonda();
-	        
-	        ganadores = validarGanador();
-	        
-	        if (ganadores.size() > 0) {
-	            break;
-	        }
-	    }
-	    
-	    return ganadores;
+		ArrayList<Jugador> ganadores = new ArrayList<>();
+
+		for (int i = 0; i < 3; i++) {
+			repartirRonda();
+
+			ganadores = validarGanador();
+
+			if (ganadores.size() > 0) {
+				break;
+			}
+		}
+
+		return ganadores;
 	}
-	
-	
+
 }

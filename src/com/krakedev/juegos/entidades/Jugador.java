@@ -8,11 +8,18 @@ public class Jugador {
 	private int puntajeCartas;
 	
 
-
+	public Jugador(String nicname) {
+        this.nicname = nicname;
+    }
 	public void recibirCarta(Carta carta) {
 		cartas.add(carta);
 
 	}
+	
+	public void limpiar() {
+        this.cartas.clear(); 
+        this.puntajeCartas = 0;
+    }
 	
 	
 
