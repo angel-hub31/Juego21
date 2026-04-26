@@ -37,6 +37,14 @@ public class Carta {
 		this.palo = palo;
 	}
 	
+	//metodo imprmir
+	public void imprimir() {
+		System.out.println("Valor: " +valor);
+		System.out.println("Valor en Juego: "+valorJuego);
+		System.out.println("Palo: " +palo);
+
+	}
+	
 	
 	
 
